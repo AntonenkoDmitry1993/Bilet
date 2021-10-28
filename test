@@ -1,0 +1,20 @@
+a = 0
+b = 0
+
+print('Нow many visitors:')
+n = int(input())
+for i in range(n):
+        i += 1
+        print("visitor's age:")
+        age = int(input())
+        if age < 18:
+            a = 0
+        if 18 <= age < 25:
+            a = 990
+        if 25 <= age:
+            a = 1390
+        b = b + a
+if n > 3:
+    print("Total amount:", b-(0.1*b), " Rub.")
+else:
+    print("Total amount", b, "Rub.")
